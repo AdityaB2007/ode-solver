@@ -21,10 +21,19 @@ This repo includes experiments on:
 
 ## Project Structure
 ```text
-numerical-ode-solvers/
+ode-solver/
 ├── ode_solver/
+│   ├── __init__.py
+│   ├── euler.py
+│   ├── heun.py
+│   ├── rk4.py
+│   ├── analysis.py
+│   └── utils.py
 ├── examples/
+│   ├── exponential_growth.py
+│   └── logistic_growth.py
 ├── tests/
+│   └── test_solvers.py
 ├── README.md
 ├── requirements.txt
 └── main.py
