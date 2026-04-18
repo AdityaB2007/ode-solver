@@ -1,6 +1,6 @@
 # Numerical ODE Solver in Python
 
-A Python project implementing numerical methods for solving first-order ordinary differential equations from scratch.
+A Python project implementing and analyzing numerical methods for solving first-order ordinary differential equations (ODEs) from scratch.
 
 ## Methods Implemented
 - Euler's Method
@@ -8,16 +8,24 @@ A Python project implementing numerical methods for solving first-order ordinary
 - Classical Runge-Kutta 4 (RK4)
 
 ## Features
-- Reusable solver functions
-- Error analysis against exact solutions
-- Example problems
-- Visualization with matplotlib
-- Basic testing with pytest
+- Modular, reusable solver implementations
+- Error analysis compared to exact solutions
+- Visualization of solution accuracy and behavior
+- Example problems with varying dynamics
+- Unit testing using pytest
 
-## Example Problem
-This repo includes experiments on:
-- The exponential growth equation: y' = y, y(0) = 1
-- The logistic growth equation: y' = y(1-y), y(0) = 0.1
+## Example Problems
+This project includes experiments on:
+- Exponential growth: y' = y, y(0) = 1  
+- Logistic growth: y' = y(1 - y), y(0) = 0.1  
+
+These examples are used to compare method accuracy and observe how step size affects numerical stability and error.
+
+## Key Insights
+- Euler’s method accumulates significant error for larger step sizes  
+- Heun’s method improves accuracy by incorporating slope correction  
+- RK4 provides significantly higher accuracy with modest computational cost  
+- Step size plays a critical role in stability and convergence  
 
 ## Project Structure
 ```text
@@ -55,4 +63,4 @@ pytest
 ```
 
 ## Motivation
-This project was built to connect mathematical understanding of differential equations and numerical analysis with practical Python implementation.
+This project was built to bridge mathematical understanding of differential equations with practical implementation. It focuses not only on coding the methods, but also on analyzing their behavior, accuracy, and limitations.
